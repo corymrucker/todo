@@ -3,7 +3,8 @@
     <h1>todos</h1>
     <form id="new-form">
       <input type="text" class="new-todo" placeholder="What needs to be done?" />
-    </form>
+      <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+  </form>
   </header>
 
   <section class="main">
